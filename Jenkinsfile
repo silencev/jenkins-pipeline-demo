@@ -13,6 +13,11 @@ pipeline {
         sh 'ls -al'
         sh 'pwd'
       }
+      post {
+        always {
+          sh 'printenv'
+        }
+      }
     }
   }
 }
