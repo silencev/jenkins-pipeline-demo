@@ -10,6 +10,8 @@ pipeline {
       }
       steps{
         sh 'python -c "import sys;print(sys.executable, sys.version)"'
+        sh 'ls -al'
+        sh 'pwd'
       }
     }
   }
